@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E31588391E8C5CF5003F3A2F /* DeleteFromArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E31588371E8C5CF5003F3A2F /* DeleteFromArray.cpp */; };
 		E3CB974C1E89954C00CFAA80 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CB974B1E89954C00CFAA80 /* main.cpp */; };
+		E3CB97541E8AD22F00CFAA80 /* DutchNationalFlag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CB97521E8AD22F00CFAA80 /* DutchNationalFlag.cpp */; };
+		E3CB97571E8B126E00CFAA80 /* Hanoi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CB97551E8B126E00CFAA80 /* Hanoi.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E31588371E8C5CF5003F3A2F /* DeleteFromArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeleteFromArray.cpp; sourceTree = "<group>"; };
+		E31588381E8C5CF5003F3A2F /* DeleteFromArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DeleteFromArray.hpp; sourceTree = "<group>"; };
 		E3CB97481E89954C00CFAA80 /* AlgorithmCpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmCpp; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3CB974B1E89954C00CFAA80 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E3CB97521E8AD22F00CFAA80 /* DutchNationalFlag.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DutchNationalFlag.cpp; sourceTree = "<group>"; };
+		E3CB97531E8AD22F00CFAA80 /* DutchNationalFlag.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DutchNationalFlag.hpp; sourceTree = "<group>"; };
+		E3CB97551E8B126E00CFAA80 /* Hanoi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hanoi.cpp; sourceTree = "<group>"; };
+		E3CB97561E8B126E00CFAA80 /* Hanoi.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Hanoi.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				E3CB974B1E89954C00CFAA80 /* main.cpp */,
+				E3CB97551E8B126E00CFAA80 /* Hanoi.cpp */,
+				E3CB97561E8B126E00CFAA80 /* Hanoi.hpp */,
+				E3CB97521E8AD22F00CFAA80 /* DutchNationalFlag.cpp */,
+				E3CB97531E8AD22F00CFAA80 /* DutchNationalFlag.hpp */,
+				E31588371E8C5CF5003F3A2F /* DeleteFromArray.cpp */,
+				E31588381E8C5CF5003F3A2F /* DeleteFromArray.hpp */,
 			);
 			path = AlgorithmCpp;
 			sourceTree = "<group>";
@@ -120,6 +135,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3CB97571E8B126E00CFAA80 /* Hanoi.cpp in Sources */,
+				E3CB97541E8AD22F00CFAA80 /* DutchNationalFlag.cpp in Sources */,
+				E31588391E8C5CF5003F3A2F /* DeleteFromArray.cpp in Sources */,
 				E3CB974C1E89954C00CFAA80 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +267,7 @@
 				E3CB97511E89954C00CFAA80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
