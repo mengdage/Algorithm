@@ -13,6 +13,10 @@
 #include "DutchNationalFlag.hpp"
 #include "Hanoi.hpp"
 #include "DeleteFromArray.hpp"
+#include "Fibonacci.hpp"
+#include "NonattackingQueens.hpp"
+#include "NextPermutation.hpp"
+#include "PowerSet.hpp"
 
 using std::vector; using std::cout; using std::flush; using std::endl;
 using std::srand; using std::rand;
@@ -46,13 +50,13 @@ void foo4(int (&arr)[10]) { cout << sizeof(arr) << '\n'; }
 
 
 int main(int argc, const char * argv[]) {
-    vector<int> arr;
-    srand(123);
-    for(int i = 0; i < 10; ++i){
-        arr.push_back(rand()%20);
-    }
-    printIntVector(arr);
-    cout << endl;
+//    vector<int> arr;
+//    srand(123);
+//    for(int i = 0; i < 10; ++i){
+//        arr.push_back(rand()%20);
+//    }
+//    printIntVector(arr);
+//    cout << endl;
 //
 //    int m = max(arr);
 //    int mRe = maxRe(arr, 0, (int)arr.size());
@@ -73,8 +77,47 @@ int main(int argc, const char * argv[]) {
     
 //    GameHanoi(3);
     
-    DeleteFromArray(15, arr);
-    printIntVector(arr);
+//    DeleteFromArray(15, arr);
+//    printIntVector(arr);
+    
+    
+//    int f, fRe;
+//    for(int i = 1; i < 11; ++i){
+//        f = FibonacciNumber(i);
+//        fRe = FibonacciNumberRe(i);
+//        cout << i <<": " << f << " " << fRe<< endl;
+//    }
+    
+//    vector<int> fs = FibonacciSeries(1);
+//    printIntVector(fs);
+//    fs = FibonacciSeries(2);
+//    printIntVector(fs);
+//    fs = FibonacciSeries(3);
+//    printIntVector(fs);
+//    fs = FibonacciSeries(10);
+//    printIntVector(fs);
+    
+
+//    vector<int> placement(6, 0);
+//    NonattackingQueens(6, 0, placement);
+    
+//    vector<int> arr;
+//    srand(123);
+//    for(int i = 0; i < 1; ++i){
+//        arr.push_back(rand()%10);
+//    }
+//    printIntVector(arr);
+//    
+//    while(NextPermutation(arr))
+//        printIntVector(arr);
+    
+    vector<int> arr;
+    
+    for(int i = 0; i < 3; ++i){
+        arr.push_back(i);
+    }
+    PowerSet(arr);
+    
     
     return 0;
 }
