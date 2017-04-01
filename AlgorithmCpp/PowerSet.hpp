@@ -14,5 +14,6 @@
 #include <iostream>
 
 void PowerSet(std::vector<int> &v);
+void PowerSetWithoutFlag(std::vector<int> &v);
 
 #endif /* PowerSet_hpp */

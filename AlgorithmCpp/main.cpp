@@ -17,6 +17,9 @@
 #include "NonattackingQueens.hpp"
 #include "NextPermutation.hpp"
 #include "PowerSet.hpp"
+#include "EnumerateSubsets.hpp"
+#include "ListNode.h"
+#include "MergeTwoLinkedList.hpp"
 
 using std::vector; using std::cout; using std::flush; using std::endl;
 using std::srand; using std::rand;
@@ -42,12 +45,35 @@ void printIntVector(const vector<int> &A){
     }
     cout << endl;
 }
-
+void printIntLinkedList(const ListNode<int> *l){
+    while(l){
+        cout << l->data << " ";
+        l = l->next;
+    }
+    cout << endl;
+}
 void foo1(int *arr) { cout << sizeof(arr) << '\n'; }
 void foo2(int arr[]) { cout << sizeof(arr) << '\n'; }
 void foo3(int arr[10]) { cout << sizeof(arr) << '\n'; }
 void foo4(int (&arr)[10]) { cout << sizeof(arr) << '\n'; }
 
+struct A{
+    int i;
+    A(int v):i(v){}
+};
+class B{
+    int i;
+public:
+    B(){}
+    void printI(){
+        cout<< i << endl;
+    }
+};
+
+struct Container
+{
+    int n;
+};
 
 int main(int argc, const char * argv[]) {
 //    vector<int> arr;
@@ -111,12 +137,56 @@ int main(int argc, const char * argv[]) {
 //    while(NextPermutation(arr))
 //        printIntVector(arr);
     
-    vector<int> arr;
+//    vector<int> arr;
+//    
+//    for(int i = 0; i < 3; ++i){
+//        arr.push_back(i);
+//    }
+//    PowerSet(arr);
+//    PowerSetWithoutFlag(arr);
     
-    for(int i = 0; i < 3; ++i){
-        arr.push_back(i);
+//    EnumerateSubsets(5, 2);
+    ListNode<int> *L1 = nullptr;
+    ListNode<int> *tail1 = nullptr;
+    for(int i = 0; i <10; i = i+2){
+        if(L1 == nullptr){
+            L1 = new ListNode<int>();
+            L1->data = i;
+            L1->next = nullptr;
+            tail1 = L1;
+        }
+        else {
+            tail1->next = new ListNode<int>();
+            tail1 = tail1->next;
+            tail1->data = i;
+            tail1->next = nullptr;
+        }
     }
-    PowerSet(arr);
+    
+    ListNode<int> *L2 = nullptr;
+    ListNode<int> *tail2 = nullptr;
+    for(int i = 1; i <10; i = i+2){
+        if(L2 == nullptr){
+            L2 = new ListNode<int>();
+            L2->data = i;
+            L2->next = nullptr;
+            tail2 = L2;
+        }
+        else {
+            tail2->next = new ListNode<int>();
+            tail2 = tail2->next;
+            tail2->data = i;
+            tail2->next = nullptr;
+        }
+    }
+    
+    printIntLinkedList(L1);
+    printIntLinkedList(L2);
+
+    ListNode<int> *merged = MergeTwoLinkedList(L1, L2);
+    printIntLinkedList(merged);
+
+    
     
     
     return 0;
