@@ -10,5 +10,7 @@
 #define FindSmallestPositiveInteger_hpp
 
 #include <stdio.h>
-
+#include <iostream>
+#include <vector>
+int FindSmallestPositiveInteger(std::vector<int> A);
 #endif /* FindSmallestPositiveInteger_hpp */
