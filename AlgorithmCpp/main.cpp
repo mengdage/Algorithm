@@ -39,6 +39,7 @@
 #include "MedianOfTwoArray.hpp"
 #include "sqrt.hpp"
 #include "myPower.hpp"
+#include "BinarySearch.hpp"
 
 using std::vector; using std::cout; using std::flush; using std::endl;
 using std::srand; using std::rand;
@@ -95,26 +96,12 @@ struct Container
 {
     int n;
 };
-int binarySearchSum(int n, int t){
-    int lo = 1, hi = n;
-    int sum = 0;
-    while(true){
-        int mid = (hi + lo)/2 + ((hi+lo)%2 ? 1 : 0);
-        if(mid == t) return sum;
-        sum += mid;
-        if(mid < t){
-            lo = mid +1;
-        } else {
-            hi = mid-1;
-        }
-    }
-}
+
 
 int main(int argc, const char * argv[]) {
-    int n = 10;
-    for(int i = 1; i <= n; ++i){
-        int s = binarySearchSum(n, i);
-        cout << "target: " << i << " cost: " << s << endl;
-    }
+    std::vector<int> v1 = {1,2,3,3,3,3,4,5};
+    cout << binarySearch(v1, 3) << endl;
+    cout << binarySearchFirst(v1, 3) << endl;
+    cout << binarySearchLast(v1, 3) << endl;
     return 0;
 }
