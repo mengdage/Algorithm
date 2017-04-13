@@ -40,6 +40,11 @@
 #include "sqrt.hpp"
 #include "myPower.hpp"
 #include "BinarySearch.hpp"
+#include "RunUpStairs.hpp"
+#include "CornerRobot.hpp"
+#include "Permutation.hpp"
+#include "Parenthesis.hpp"
+#include "CentsCombination.hpp"
 
 using std::vector; using std::cout; using std::flush; using std::endl;
 using std::srand; using std::rand;
@@ -99,9 +104,7 @@ struct Container
 
 
 int main(int argc, const char * argv[]) {
-    std::vector<int> v1 = {1,2,3,3,3,3,4,5};
-    cout << binarySearch(v1, 3) << endl;
-    cout << binarySearchFirst(v1, 3) << endl;
-    cout << binarySearchLast(v1, 3) << endl;
+
+    testCents();
     return 0;
 }
